@@ -2,3 +2,5 @@ vendor
 database
 composer.lock
 docker-compose.yml
+.env
+mysql
