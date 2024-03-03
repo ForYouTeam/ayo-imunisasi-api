@@ -19,9 +19,9 @@ class UserController extends Controller
     public function getAllData()
     {
         $result = collect($this->userRepo->getAllPayload([]));
-        $code = $result->code;
+        $code = $result['code'];
 
-        $result = $result->forget('code');
+        // $result = $result->forget('code');
         return response()->json($result, $code);
     }
 
